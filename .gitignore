@@ -8,3 +8,5 @@ admin/www
 mobile/www
 admin/app/www
 admin/app/index.js
+admin/node_modules
+mobile/node_modules
