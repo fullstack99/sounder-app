@@ -1,0 +1,89 @@
+.main-body {
+  padding: 50px;
+  height: 100vh;
+  background: #1a346a;
+  .row-card {
+    background: #234a8e;
+    border-radius: 7px;
+    padding: 30px;
+    margin-bottom: 50px;
+    .comment {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: 'Gotham Bold';
+      font-size: 26px;
+      .active {
+        font-family: 'Gotham Bold';
+        font-size: 26px;
+        margin-right: 30px;
+      }
+    }
+    .slider-bar {
+      display: flex;
+      align-items: center;
+      width: 150px;
+      justify-content: space-between;
+     }
+    textarea {
+      background: #000000;
+      color: #ffffff;
+      width: 98%;
+      height: 100px;
+      border-radius: 7px;
+      border: none;
+      padding: 15px;
+      resize: none;
+      font-weight: normal;
+      font-family: 'Gotham Book';
+      font-size: 18px !important;
+    }
+
+    textarea::placeholder {
+      color: #fff;
+      font-weight: normal;
+      font-family: 'Gotham Book';
+      font-size: 18px !important;
+    }
+    .btn-start {
+      border: 1px solid #ffffff;
+      background: linear-gradient(to bottom, #d3d3d3 100%,#d3d3d3 100%);
+      color: #ffffff;
+      width: 140px;
+      height: 50px;
+      font-size: 20px;
+      font-family: 'Gotham Bold';
+      border-radius: 10px;
+      text-transform: uppercase;
+    }
+  }
+  .active-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-active {
+    background: #1a346a !important;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .btn-disabled {
+    background: #d3d3d3 !important;
+    color: #000000 !important;
+    cursor: not-allowed;
+  }
+}
+
+:host {
+  .switch-medium.checked{
+    left: 49px;
+  }
+  .switch-medium {
+    width: 80px;
+  }
+}
+
+.switch-medium.checked{
+  left: 49px;
+}
+.switch-medium {
+  width: 80px !important;
+}

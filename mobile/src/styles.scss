@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'City Bold';
+  src: url('assets/fonts/City-Bold.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  width: 100%;
+  height: 100%
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.loadingOverlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("assets/images/bg.png") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+#myAudio {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #181818;
+  .logo {
+    width: 40px;
+  }
+  .title {
+    color: #c7177f;
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'City Bold';
+  }
+  .nav-bar {
+    width: 40px;
+    padding-left: 15px;
+  }
+}
+
+.main-content {
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .boat {
+    width: 90%;
+    border-radius: 50%;
+  }
+  .text-content {
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: 'City Bold';
+  }
+}

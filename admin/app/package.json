@@ -1,0 +1,11 @@
+{
+  "name": "sounder",
+  "version": "1.0.0",
+  "description": "Sounder Sync",
+  "main": "index.js",
+  "author": "Game Changer Interactrive",
+  "dependencies": {
+    "electron-debug": "^1.4.0",
+    "firebase-admin": "^6.0.0"
+  }
+}

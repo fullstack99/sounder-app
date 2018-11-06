@@ -1,0 +1,27 @@
+{
+  "name": "sounder",
+  "version": "1.0.0",
+  "main": "admin/index.js",
+  "repository": "https://github.com/GameChangerInteractive/sounder.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn build:mobile && yarn build:admin",
+    "dev": "concurrently -k \"yarn dev:admin\" \"yarn dev:mobile\"",
+    "install:admin": "cd admin && yarn",
+    "install:mobile": "cd mobile && yarn",
+    "dev:admin": "cd admin && yarn dev",
+    "dev:mobile": "cd mobile && yarn dev",
+    "build:admin": "cd admin && yarn build",
+    "build:mobile": "cd mobile && yarn build",
+    "lint": "yarn lint:admin && yarn lint:mobile",
+    "lint:admin": "cd admin && yarn lint",
+    "lint:mobile": "cd mobile && yarn lint",
+    "deploy:netlify": "netlify-deploy --dir=sounder --remote=/sounder",
+    "postinstall": "yarn install:admin && yarn install:mobile"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "@gamechanger/netlify-deploy": "https://gamechanger:gcmvp2018@npm.gamechanger.studio/@gamechanger/netlify-deploy/1.0.12.tgz"
+  }
+}
