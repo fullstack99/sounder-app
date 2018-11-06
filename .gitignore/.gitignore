@@ -1,0 +1,10 @@
+.idea
+node_modules
+*.iml
+dist
+npm-debug.log
+*.html
+admin/www
+mobile/www
+admin/app/www
+admin/app/index.js
